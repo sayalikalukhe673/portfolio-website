@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Sayali Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    background:#000814;
+    padding:18px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:50px 20px;
+}
+
+header h1{
+    font-size:45px;
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#ddd;
+    font-size:18px;
+}
+
+/* SERVICES */
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    width:320px;
+    background:#111827;
+    border-radius:18px;
+    padding:25px;
+    transition:.4s;
+    box-shadow:0 0 15px rgba(0,255,213,.15);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00ffd5;
+}
+
+.card i{
+    font-size:40px;
+    color:#00ffd5;
+    margin-bottom:15px;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.highlight{
+    color:#facc15;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#00ffd5;
+    font-size:24px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.card ul{
+    padding-left:20px;
+}
+
+.card ul li{
+    margin:8px 0;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    padding:12px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000814;
+    margin-top:40px;
+    padding:30px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.footer-box{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-box h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.footer-box a{
+    color:white;
+    text-decoration:none;
+    margin:5px 0;
+}
+
+.footer-box a:hover{
+    color:#38bdf8;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:20px;
+    border-top:1px solid #333;
+    padding-top:15px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>My Freelance Services 🚀</h1>
+    <p>Frontend • Backend • Full Stack • Apps • Games</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <i class="fa-solid fa-code"></i>
+        <h2>Frontend Development</h2>
+        <p class="highlight">HTML • CSS • JavaScript</p>
+        <div class="price">₹999+</div>
+        <ul>
+            <li>Responsive Website</li>
+            <li>Portfolio Design</li>
+            <li>Landing Pages</li>
+            <li>Modern UI Design</li>
+        </ul>
+        <a href="#" class="btn" onclick="buyNow()">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-server"></i>
+        <h2>Backend Development</h2>
+        <p class="highlight">Java • JDBC • SQL</p>
+        <div class="price">₹1999+</div>
+        <ul>
+            <li>Database Integration</li>
+            <li>Login System</li>
+            <li>CRUD Operations</li>
+            <li>API Development</li>
+        </ul>
+        <a href="#" class="btn" onclick="buyNow()">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-layer-group"></i>
+        <h2>Full Stack Development</h2>
+        <p class="highlight">Frontend + Backend</p>
+        <div class="price">₹3999+</div>
+        <ul>
+            <li>Complete Website</li>
+            <li>Database</li>
+            <li>Admin Panel</li>
+            <li>Deployment</li>
+        </ul>
+        <a href="#" class="btn" onclick="buyNow()">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h2>App Development</h2>
+        <p class="highlight">Android Applications</p>
+        <div class="price">₹4999+</div>
+        <ul>
+            <li>Custom App Design</li>
+            <li>User Friendly UI</li>
+            <li>Functional Features</li>
+            <li>Testing Support</li>
+        </ul>
+        <a href="#" class="btn" onclick="buyNow()">Buy Now</a>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-gamepad"></i>
+        <h2>Game Development</h2>
+        <p class="highlight">Mini Games</p>
+        <div class="price">₹5999+</div>
+        <ul>
+            <li>2D Games</li>
+            <li>JavaScript Games</li>
+            <li>Custom Gameplay</li>
+            <li>Interactive Design</li>
+        </ul>
+        <a href="#" class="btn" onclick="buyNow()">Buy Now</a>
+    </div>
+
+</div>
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>Portfolio</h3>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Projects</h3>
+            <a href="projects.html">Hotel Management System</a>
+            <a href="projects.html">Pacman Game</a>
+            <a href="projects.html">Portfolio Website</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Connect</h3>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Instagram</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Sayali Portfolio | All Rights Reserved
+    </div>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/917709624013?text=Hi%20Sayali%20I%20want%20a%20project"
+target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+<script>
+function buyNow(){
+      window.location.href = "contact.html";
+}
+
+</script>
+
+</body>
+</html>
